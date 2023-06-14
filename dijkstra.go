@@ -14,13 +14,13 @@ type Arco struct {         //per un grafo pesato dove le chiavi dei vertici sono
 
 
 func dfs1(g grafo, v int, aux map[int]bool) {
-	fmt.Println(v)
-	aux[v] = true
-	for _, v2 := range g[v] {
-		if !aux[v2] {
-			dfs1(g, v2, aux)
-		}
+   fmt.Println(v)
+   aux[v] = true
+   for _, v2 := range g[v] {
+      if !aux[v2] {
+	 dfs1(g, v2, aux)
 	}
+    }
 }
 
 
@@ -74,24 +74,24 @@ func leggiGrafo() Grafo {
 
 
 func bfs(g Grafo, partenza int, arrivo int ) bool{
-	coda := []int{partenza}
-  visitati := make (map[int]bool)
-	visitati[partenza] = true
+   coda := []int{partenza}
+   visitati := make (map[int]bool)
+   visitati[partenza] = true
 
-	for len(coda) > 0 {
-		vertice := coda[0]
-		coda = coda[1:]
+   for len(coda) > 0 {
+	vertice := coda[0]
+	coda = coda[1:]
 
-    if vertice == arrivo{
-      return true
-    }
-		for _, arco := range g[vertice] {
-			if !visitati[arco.to]  {   //aggiungo solo i vertici che raggiungo con un arcco povero
-				coda = append(coda, arco.to)
-				visitati[arco.to] = true
-			}
-		}
+    	if vertice == arrivo{
+      	   return true
+    	}
+	for _, arco := range g[vertice] {
+	   if !visitati[arco.to]  {   //aggiungo solo i vertici che raggiungo con un arcco povero
+		coda = append(coda, arco.to)
+		visitati[arco.to] = true
+	    }
 	}
+    }
   return false
 }
 
