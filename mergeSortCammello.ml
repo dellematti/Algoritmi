@@ -44,6 +44,7 @@ let merge (cmp : 'a -> 'a -> int) (left : 'a list) (right : 'a list) : 'a list =
   in
   aux [] left right
 
+
 let rec merge_sort (cmp : 'a -> 'a -> int) (lst : 'a list) : 'a list =
   match lst with
   | [] | [_] -> lst
