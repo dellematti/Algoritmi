@@ -44,7 +44,7 @@ func risistemaVersoIlBasso(vettorePosizionale *[]int, indiceNodo int, size int) 
 }
 
 
-// la prima cosa da fare, prima di iniziare ad ordinare, è creare la struttura dati heap che uso in seguito (max-heap)
+// la prima cosa da fare, prima di iniziare ad ordinare, è creare la struttura dati heap che userò in seguito (max-heap)
 // tempo O (n)     questo anche se chiamo n volte risistema che costa O ( log n)
 func creaMinHeap(vettorePosizionale *[]int) {
   dimensione := len(*vettorePosizionale)
