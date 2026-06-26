@@ -96,6 +96,7 @@ func bfs(g Grafo, partenza int, arrivo int ) bool{
 }
 
 
+
 // se decidessi di fare un minheap dovrei fare l heap con dentro gli stessi elementi di distanze ma con al suo interno, ogni
 // elemento sarebbe rappresentato da una struct fatta dalla distanza e dalla chiave, qua se trovo il min in posizione 4 so già
 // la posizione, con il miheap troverei sempre il minimo in posizione 1, ma mi serve sapere la chiave del vertice
