@@ -6,8 +6,8 @@ import (
 )
 
 
-type Grafo map[int][]Arco   //uso direttamente l int come chiave della mappa
-type Arco struct {         //per un grafo pesato dove le chiavi dei vertici sono interi
+type Grafo map[int][]Arco   // uso direttamente l int come chiave della mappa
+type Arco struct {         // per un grafo pesato dove le chiavi dei vertici sono interi
   to int
   costo int
 }
