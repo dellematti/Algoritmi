@@ -68,7 +68,7 @@ func heapSort(vettorePosizionale *[]int) {
 func main() {
 	inputArray := []int{6, 5, 3, 7, 2, 8, -1, 34, 1 , 3, 30}
   heapSort( &inputArray )
-  // passo l array per riferimento, devo controllare se in go ha senso oppure no; passandolo per valore mi copierebbe l header della
+  // passo l array per riferimento, devo controllare se in go ha senso oppure no, passandolo per valore mi copierebbe l header della
   //  slice ogni volta, il riferimento resta quello ma ogni volta devo copiare: length, capacità e il riferimento (comunque sarebbe tempo costante)
   for _, r := range inputArray{
     fmt.Print(r, " ")
