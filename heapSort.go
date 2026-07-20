@@ -3,7 +3,6 @@ import "fmt"
 
 // heap (max-heap) e heapsort
 
-
 // scambia due elementi
 func swap(vettorePosizionale *[]int, primo, secondo int) {
 	(*vettorePosizionale)[primo], (*vettorePosizionale)[secondo] = (*vettorePosizionale)[secondo], (*vettorePosizionale)[primo]
