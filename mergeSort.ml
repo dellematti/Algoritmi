@@ -1,5 +1,6 @@
 type element = string * int
 
+
 let alkaline_earth_metals : element list =
   [ ("magnesium", 12)
   ; ("strontium", 38)
