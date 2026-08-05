@@ -23,7 +23,6 @@ func dfs1(g grafo, v int, aux map[int]bool) {
     }
 }
 
-
 // altro modo per fare un grafo
 //
 // type adjSet []int
