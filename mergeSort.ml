@@ -14,7 +14,6 @@ let noble_gases : element list =
   ]
 
 
-
 let print_elements (lst : element list) : unit =
   let print_one (name, atomic_number) =
     Printf.printf "%s, %d; " name atomic_number
