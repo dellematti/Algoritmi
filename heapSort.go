@@ -9,7 +9,6 @@ func swap(vettorePosizionale *[]int, primo, secondo int) {
 	(*vettorePosizionale)[primo], (*vettorePosizionale)[secondo] = (*vettorePosizionale)[secondo], (*vettorePosizionale)[primo]
 }
 
-
 func foglia(vettorePosizionale *[]int, indiceNodo int) bool {
 	if indiceNodo >= (len(*vettorePosizionale)/2) && indiceNodo <= len(*vettorePosizionale) {
 		return true
