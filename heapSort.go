@@ -17,6 +17,7 @@ func foglia(vettorePosizionale *[]int, indiceNodo int) bool {
 }
 
 
+
 // per risistemare (verso il basso) impiego al massimo log n, l altezza dello heap è logaritmica rispetto al numero di nodi
 func risistemaVersoIlBasso(vettorePosizionale *[]int, indiceNodo int, size int) {
 	if foglia(vettorePosizionale, indiceNodo) {  //l algoritmo funziona anche senza questo case base, ma mi
