@@ -13,7 +13,6 @@ type Arco struct {         // per un grafo pesato dove le chiavi dei vertici son
 }
 
 
-
 func dfs1(g grafo, v int, aux map[int]bool) {
    fmt.Println(v)
    aux[v] = true
