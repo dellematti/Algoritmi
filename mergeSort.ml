@@ -8,6 +8,7 @@ let alkaline_earth_metals : element list =
   ]
 
 
+
 let noble_gases : element list =
   [ ("argon", 18)
   ; ("helium", 2)
